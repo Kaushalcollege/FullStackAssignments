@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gradious CSS Assignment - 6</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Wireframe of Assignment - 6:
+             Container:
+                |
+                |--first div of container
+                |     |--h2
+                |     |--p
+                |
+                |--Mid div of container
+                |     |--form
+                |          |--form-row -- first and last name (Text Fields)
+                |          |--form-row -- email and phone number (Text Fields)
+                |          |--form-group (gender) (Radio Buttons)
+                |          |--dropdown (city) (Dropdown)
+                |          |--form-row
+                |          |    |--applied position (Text Field)
+                |          |    |--earliest start date (calendar)
+                |          |--interview date (calendar)
+                |          |--time slots -- divs
+                |          |--upload resume --div
+                |
+                |--last div of container
+                      |--Apply button -->
+    <div class="container">
+      <div class="top">
+        <h2>Job Application Form</h2>
+        <p>Please Fill Out the Form Below to Submit Your Job Application!</p>
+      </div>
+      <hr />
+      <br />
+      <div class="mid">
+        <form>
+          <div class="form-row">
+            <div class="form-group-fname">
+              <label for="firstname">First Name *</label>
+              <input
+                type="text"
+                name="firstname"
+                placeholder="First Name"
+                required
+              />
+            </div>
+            <div class="form-group-lname">
+              <label for="lastname">Last Name *</label>
+              <input
+                type="text"
+                name="lastname"
+                placeholder="Last Name"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group-email">
+              <label for="email">E-mail *</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="ex: myname@example.com"
+                required
+              />
+              <small>example@example.com</small>
+            </div>
+            <div class="form-group-phone">
+              <label for="phone">Phone Number *</label>
+              <input
+                type="tel"
+                name="phone"
+                placeholder="000-000-0000"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="form-group-gender">
+            <label>Gender</label>
+            <div class="gender-options">
+              <label
+                ><input type="radio" name="gender" value="Male" /> Male</label
+              >
+              <label
+                ><input type="radio" name="gender" value="Female" />
+                Female</label
+              >
+              <label
+                ><input type="radio" name="gender" value="Transgender" />
+                Transgender</label
+              >
+            </div>
+          </div>
+
+          <div class="form-group-city">
+            <label for="city">Current City</label>
+            <select name="city" id="city">
+              <option value="">Please Select</option>
+              <option value="Hyderabad">Hyderabad</option>
+              <option value="Kolkata">Kolkata</option>
+              <option value="Bangalore">Bangalore</option>
+              <option value="Delhi">Delhi</option>
+              <option value="Chennai">Chennai</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group-position">
+              <label for="position">Applied Position *</label>
+              <input
+                type="text"
+                name="position"
+                placeholder="Applied Position"
+                required
+              />
+            </div>
+            <div class="form-group-date">
+              <label for="startDate">Earliest Possible Start Date *</label>
+              <input type="date" name="startDate" required />
+            </div>
+          </div>
+
+          <div class="form-group-interview">
+            <label for="interviewDate">Preferred Interview Date *</label>
+            <input type="date" id="interviewDate" required />
+          </div>
+
+          <div class="form-group-timeslots">
+            <label>Preferred Time Slot *</label>
+            <div class="time-options">
+              <div class="time-option">11:30 AM</div>
+              <div class="time-option">12:30 PM</div>
+              <div class="time-option">1:30 PM</div>
+              <div class="time-option">4:30 PM</div>
+              <div class="time-option">5:30 PM</div>
+              <div class="time-option">6:30 PM</div>
+            </div>
+          </div>
+
+          <div class="form-group-resume">
+            <label for="resume-upload">Upload Resume *</label>
+            <div id="resume-upload-div">
+              <p><strong>Upload a File</strong></p>
+              <p>Drag and drop files here</p>
+              <input type="file" id="resume-upload" required />
+            </div>
+          </div>
+
+          <hr />
+          <div class="bottom">
+            <button id="applyBtn" type="submit">Apply</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Projects</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Wireframe for Assignment 4 -- project page
+             container:
+                 |
+                 | -- header with Gradious Logo
+                 | -- mid div
+                 |        |
+                 |        | -- content
+                 |        |       |
+                 |        |       | -- project1
+                 |        |       | -- project1
+                 |        |       | -- project3
+                 |        |       | 
+                 |        |
+                 |        | -- nav bar
+                 |
+                 | -- footer with links to other pages   -->
+    <div class="container">
+      <div class="top-div">
+        <div class="header">
+          <img src="./images/gradious-logo.png" alt="Gradious Logo" />
+          <h1 id="main">Gradious</h1>
+        </div>
+        <div class="nav-bar">
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Me</a></li>
+            <li><a href="./project.html">Projects</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mid-div">
+        <div class="proj-content">
+          <div class="proj1">
+            <img src="./images/p1.png" alt="Project 1 Image" />
+            <div class="proj1-text">
+              <h2>
+                Project 1: Agentic RAG Chatbot with FastAPI, React, and MCP
+              </h2>
+              <p>
+                This project implements a high-performance, enterprise-grade
+                Retrieval-Augmented Generation (RAG) chatbot. It features a
+                decoupled architecture with a React (Vite + TypeScript) frontend
+                and a FastAPI (Python) backend.The backend is built as a set of
+                microservices, where each agent (Ingestion, Retrieval,
+                LLMResponse) operates as a distinct API endpoint. A central
+                Coordinator agent orchestrates the workflow by making HTTP
+                requests to these services, perfectly embodying the principles
+                of a distributed, message-passing system as outlined by the
+                Model Context Protocol (MCP).
+              </p>
+            </div>
+          </div>
+          <div class="proj2">
+            <img src="./images/p2.png" alt="Project 2 Image" />
+            <div class="proj2-text">
+              <h2>
+                Project 2: ElevateCV: AI-Powered Resume Optimization Agent
+              </h2>
+              <p>
+                ElevateCV is an advanced, multi-stage AI agent designed to
+                automate the process of tailoring a candidate's resume to a
+                specific job description. By leveraging a modular,
+                first-principles approach, this agent deconstructs the complex
+                task of resume customization into a series of discrete,
+                auditable steps. The result is a highly effective, ATS-compliant
+                document that significantly improves a candidate's visibility
+                and alignment with their target role.
+              </p>
+            </div>
+          </div>
+          <div class="proj3">
+            <img src="./images/p3.png" alt="Project 3 Image" />
+            <div class="proj3-text">
+              <h2>
+                Project 3: Cognitive Clause Graph: An Interactive Exploration
+              </h2>
+              <p>
+                This project is an interactive, single-page application (SPA)
+                designed as a "living document" to explore the Cognitive Clause
+                Graph (CCG), a neuro-symbolic AI framework. It transforms a
+                dense technical concept into an engaging, self-paced narrative
+                journey suitable for both technical and non-technical
+                audiences.The application details the shortcomings of standard
+                Retrieval-Augmented Generation (RAG) systems in complex logical
+                domains and presents CCG as a robust, auditable, and more
+                accurate alternative.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-container">
+        <div class="social-icons">
+          <a href="https://www.facebook.com/gradious" target="_self">
+            <img src="./images/face.png" alt="Facebook Icon" />
+          </a>
+          <a href="https://www.google.com" target="_self">
+            <img src="./images/goo.png" alt="Google Icon" />
+          </a>
+          <a href="https://www.linkedin.com/company/gradious" target="_self">
+            <img src="./images/linked.png" alt="LinkedIn Icon" />
+          </a>
+          <a href="https://github.com/Kaushalcollege" target="_self">
+            <img src="./images/git.png" alt="Github Icon" />
+          </a>
+        </div>
+        <p>©Gradious Technologies (P) Ltd - 2025.</p>
+      </div>
+    </div>
+  </body>
+</html>

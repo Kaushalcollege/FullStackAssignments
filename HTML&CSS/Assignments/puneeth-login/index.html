@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="input-box">
+          <span class="icon">👤</span>
+          <input id="email-input" type="text" placeholder="Username" required />
+        </div>
+        <div class="input-box">
+          <span class="icon">🔒</span>
+          <input
+            id="password-input"
+            type="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="remember">
+          <input type="checkbox" id="remember" />
+          <label for="remember">Remember Me</label>
+        </div>
+        <button id="key-btn" type="submit">NEXT</button>
+        <div class="divider">
+          <span><strong>Login</strong> with Others</span>
+        </div>
+        <button class="social-btn google">
+          <img
+            src="https://www.citypng.com/public/uploads/preview/google-logo-icon-gsuite-hd-701751694791470gzbayltphh.png"
+            alt="google"
+          />
+          Login with <b>Google</b>
+        </button>
+        <button class="social-btn facebook">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/0/05/Facebook_Logo_%282019%29.png"
+            alt="facebook"
+          />
+          Login with <b>Facebook</b>
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

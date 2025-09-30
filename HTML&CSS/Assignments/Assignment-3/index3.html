@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gradious CSS Assignment - 3</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles3.css" />
+  </head>
+
+  <body>
+    <!-- Wireframe -- 
+      container
+        |
+        |-- h2 (New Customer Account)
+        |-- TextField (Name)
+        |-- TextField (Email)  TextField(Phone Number)
+        |-- TextField (Password)
+        |-- TextField (Password Again)
+        |-- Button (Register)  CheckBox (Remember Me)-->
+    <div class="container">
+      <h2 id="header">New Customer Account</h2>
+
+      <form>
+        <input type="text" placeholder="Name" /><br />
+
+        <div class="credentials">
+          <input type="text" id="email-input" placeholder="E-mail" />
+          <input type="text" id="number" placeholder="Number" />
+        </div>
+
+        <input
+          type="password"
+          id="password-input"
+          placeholder="Password"
+        /><br />
+        <input type="password" placeholder="Password Again" /><br />
+
+        <div class="actions">
+          <button type="submit" id="key-btn">Register</button>
+          <label class="Rememberme">
+            <input type="checkbox" />Remember Me
+          </label>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <h2>Job Application Form</h2>
+      <p>Please Fill Out the Form Below to Submit Your Job Application!</p>
+      <hr />
+
+      <form>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstname">First Name *</label>
+            <input
+              type="text"
+              name="firstname"
+              placeholder="First Name"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name *</label>
+            <input
+              type="text"
+              name="lastname"
+              placeholder="Last Name"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email">E-mail *</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="ex: myname@example.com"
+              required
+            />
+            <small>example@example.com</small>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number *</label>
+            <input
+              type="tel"
+              name="phone"
+              placeholder="000-000-0000"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Gender</label>
+          <div class="radio-vertical">
+            <label
+              ><input type="radio" name="gender" value="Male" /> Male</label
+            >
+            <label
+              ><input type="radio" name="gender" value="Female" /> Female</label
+            >
+            <label
+              ><input type="radio" name="gender" value="Transgender" />
+              Transgender</label
+            >
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="city">Current City</label>
+          <select id="city">
+            <option>Please Select</option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+            <option>Chicago</option>
+          </select>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="position">Applied Position</label>
+            <input type="text" name="position" />
+          </div>
+          <div class="form-group">
+            <label for="startDate">Earliest Possible Start Date</label>
+            <input type="date" name="startDate" placeholder="MM-DD-YYYY" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Preferred Interview Date</label>
+          <div class="interview-section">
+            <div class="calendar-container">
+              <div class="calendar-header">
+                <span id="currentMonth">March</span>
+                <span id="currentYear">2023</span>
+                <div class="nav-buttons">
+                  <button type="button" id="prevMonth"><</button>
+                  <button type="button" id="nextMonth">></button>
+                </div>
+              </div>
+              <div class="calendar">
+                <div class="weekdays">
+                  <span>SUN</span>
+                  <span>MON</span>
+                  <span>TUE</span>
+                  <span>WED</span>
+                  <span>THU</span>
+                  <span>FRI</span>
+                  <span>SAT</span>
+                </div>
+                <div class="days">
+                  <span class="day blank"></span>
+                  <span class="day blank"></span>
+                  <span class="day blank"></span>
+                  <span class="day">1</span>
+                  <span class="day">2</span>
+                  <span class="day">3</span>
+                  <span class="day">4</span>
+                  <span class="day">5</span>
+                  <span class="day">6</span>
+                  <span class="day">7</span>
+                  <span class="day">8</span>
+                  <span class="day">9</span>
+                  <span class="day">10</span>
+                  <span class="day">11</span>
+                  <span class="day">12</span>
+                  <span class="day">13</span>
+                  <span class="day">14</span>
+                  <span class="day">15</span>
+                  <span class="day">16</span>
+                  <span class="day">17</span>
+                  <span class="day">18</span>
+                  <span class="day">19</span>
+                  <span class="day">20</span>
+                  <span class="day">21</span>
+                  <span class="day">22</span>
+                  <span class="day">23</span>
+                  <span class="day">24</span>
+                  <span class="day">25</span>
+                  <span class="day selected">26</span>
+                  <span class="day selected">27</span>
+                  <span class="day">28</span>
+                  <span class="day">29</span>
+                  <span class="day">30</span>
+                  <span class="day">31</span>
+                </div>
+              </div>
+            </div>
+            <div class="time-slots">
+              <div class="time-header">
+                <span>Monday, March 27</span>
+                <div class="nav-buttons">
+                  <button type="button" id="prevDay"><</button>
+                  <button type="button" id="nextDay">></button>
+                </div>
+              </div>
+              <button type="button" class="time-btn">11:30 AM</button>
+              <button type="button" class="time-btn">12:30 PM</button>
+              <button type="button" class="time-btn">1:30 PM</button>
+              <button type="button" class="time-btn">4:30 PM</button>
+              <button type="button" class="time-btn">5:30 PM</button>
+              <button type="button" class="time-btn">6:30 PM</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="resume-upload">Upload Resume *</label>
+          <div class="resume-upload">
+            <input type="file" id="resume-upload" hidden />
+            <label for="resume-upload">
+              <strong>Upload a File</strong><br />
+              <small>Drag and drop files here</small>
+            </label>
+          </div>
+        </div>
+
+        <button id="applyBtn">Apply</button>
+      </form>
+    </div>
+  </body>
+</html>

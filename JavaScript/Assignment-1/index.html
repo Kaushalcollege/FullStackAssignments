@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="inner">
+        <div class="title">Job Application Form</div>
+        <div class="subtitle">
+          Please Fill Out the Form Below to Submit Your Job Application!
+        </div>
+        <div class="divider"></div>
+        <div class="field">
+          <div class="label">Name *</div>
+          <div class="grid-2">
+            <div>
+              <input type="text" id="firstName" name="firstname" />
+              <div class="hint">First Name</div>
+              <div id="firstNameError" class="error"></div>
+            </div>
+            <div>
+              <input type="text" id="lastName" name="lastname" />
+              <div class="hint">Last Name</div>
+              <div id="lastNameError" class="error"></div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="grid-2">
+            <div>
+              <div class="label">E-mail *</div>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="ex:myname@example.com"
+              />
+              <div class="hint">example@example.com</div>
+              <div id="emailError" class="error"></div>
+            </div>
+            <div>
+              <div class="label">Phone Number *</div>
+              <input
+                type="text"
+                id="phoneNumber"
+                name="Phone"
+                placeholder="000-000-0000"
+              />
+              <div id="phoneNumberError" class="error"></div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="label">Gender</div>
+          <div class="gender-wrap">
+            <label class="gender-item"
+              ><input type="radio" name="gender" value="Male" />Male</label
+            >
+            <label class="gender-item"
+              ><input type="radio" name="gender" value="Female" />Female</label
+            >
+            <label class="gender-item"
+              ><input
+                type="radio"
+                name="gender"
+                value="Transgender"
+              />Transgender</label
+            >
+          </div>
+        </div>
+        <div class="field">
+          <div class="label">Current City</div>
+          <select id="city">
+            <option>Please Select</option>
+            <option>Hyderabad</option>
+            <option>Mumbai</option>
+            <option>Chennai</option>
+            <option>Banglore</option>
+          </select>
+        </div>
+        <div class="field">
+          <div class="grid-2">
+            <div>
+              <div class="label">Applied Position *</div>
+              <input type="text" id="position" name="position" />
+              <div id="positionError" class="error"></div>
+            </div>
+            <div>
+              <div class="label">Earliest Possible Start Date</div>
+              <input
+                type="text"
+                id="startDate"
+                name="startDate"
+                placeholder="MM-DD-YYYY"
+              />
+              <div class="start-date-hint">Date</div>
+              <div id="startDateError" class="error"></div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="label">Preferred Interview Date</div>
+          <div class="interview-row">
+            <div><input type="date" id="interviewDate" /></div>
+            <div class="time-slots" id="timeSlots">
+              <button type="button" class="slot">11:30 AM</button>
+              <button type="button" class="slot">12:30 PM</button>
+              <button type="button" class="slot">1:30 PM</button>
+              <button type="button" class="slot">4:30 PM</button>
+              <button type="button" class="slot">5:30 PM</button>
+              <button type="button" class="slot">6:30 PM</button>
+              <div id="timeSlotError" class="error"></div>
+            </div>
+          </div>
+        </div>
+        <div class="field">
+          <div class="label">Upload Resume *</div>
+          <label class="upload-wrap" for="resume-upload">
+            <div class="upload-cta">
+              <div class="icon">⬆️</div>
+              <div>Upload a File</div>
+              <div class="upload-sub">Drag and drop files here</div>
+            </div>
+            <input type="file" id="resume-upload" />
+          </label>
+          <div id="resumeName" class="hint" style="display: none"></div>
+          <div id="resumeError" class="error"></div>
+        </div>
+      </div>
+      <div class="footer"><button id="btn" type="button">Apply</button></div>
+    </div>
+    <div class="overlay" id="okOverlay" role="dialog" aria-modal="true">
+      <div class="modal">
+        <h3>Saved to Local Storage</h3>
+        <p>Your details have been successfully stored in the local storage.</p>
+        <button class="close-btn" id="closeOk">Close</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Assignment 3 - Interactive Arithmetic Operations</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- wireframe:
+        |
+        | -- heading "Interactive Arithmetic Operations"
+        | -- input field for first number, with label = "Number A :"
+        | -- input field for second number, with label = "Number B :"
+        | -- dropdown for selecting operation, with label = "Operation :"
+        |    -- options: Add, Subtract, Multiply, Divide
+        | -- button "Calculate" and button "Clear"
+        | -- area to display result, with label = "Result :"
+        | -- heading -- "Calculation history"
+        | -- area to display calculation history
+        | -->
+    <div class="app">
+      <h2>Interactive Arithmetic Operations</h2>
+
+      <label for="num1">Number A: </label>
+      <input type="text" id="num1" />
+      <div id="numA-error" class="error"></div>
+
+      <label for="num2">Number B: </label>
+      <input type="text" id="num2" />
+      <div id="numB-error" class="error"></div>
+
+      <label for="operation">Operation: </label>
+      <select id="operation">
+        <option value="add">Add</option>
+        <option value="subtract">Subtract</option>
+        <option value="multiply">Multiply</option>
+        <option value="divide">Divide</option>
+      </select>
+      <div id="opr-error" class="error"></div>
+
+      <div class="button-group">
+        <button id="calculate">Calculate</button>
+        <button id="clear">Clear</button>
+      </div>
+
+      <div id="result-container"></div>
+
+      <h3>Calculation History</h3>
+      <div id="history-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

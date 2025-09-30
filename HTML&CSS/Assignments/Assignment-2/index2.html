@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gradious CSS Assignment - 2</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./styles2.css" />
+  </head>
+  <body>
+    <button id="openBtn">Show Popup</button>
+
+    <div id="popup" class="overlay hidden">
+      <div class="popup-content">
+        <div class="popup-header">
+          <h2>How to Add PopUps in HTML & CSS.</h2>
+          <span id="closeBtn" class="close">&times;</span>
+        </div>
+        <div class="popup-body">
+          <p>
+            Some Paragraph. This is a simple popup example to demonstrate how to
+            create and manage popups using HTML, CSS, and JavaScript.
+          </p>
+        </div>
+        <div class="popup-footer">
+          <button id="saveBtn" class="save">Save</button>
+          <button id="closeBtn">Close</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const openBtn = document.getElementById("openBtn");
+      const popup = document.getElementById("popup");
+      const saveBtn = document.getElementById("saveBtn");
+
+      const closeBtns = document.querySelectorAll("#closeBtn");
+
+      openBtn.addEventListener("click", () => {
+        popup.classList.remove("hidden");
+      });
+
+      closeBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          popup.classList.add("hidden");
+        });
+      });
+
+      saveBtn.addEventListener("click", () => {
+        popup.classList.add("hidden");
+      });
+    </script>
+  </body>
+</html>

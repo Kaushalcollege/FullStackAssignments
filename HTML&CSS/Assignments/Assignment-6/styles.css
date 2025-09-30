@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #b29ae9;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.form-container {
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  width: 650px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.form-container p {
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.form-container hr {
+  margin-bottom: 20px;
+  border: none;
+  height: 1px;
+  background: #ddd;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+}
+
+.form-row .form-group {
+  flex: 1;
+}
+
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+small {
+  font-size: 12px;
+  color: #666;
+}
+
+.radio-vertical label {
+  font-weight: normal;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.interview-section {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.calendar-container {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+.calendar-header .nav-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.calendar-header button {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #444;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.calendar {
+  text-align: center;
+}
+
+.weekdays {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-size: 12px;
+  color: #888;
+  margin-bottom: 5px;
+}
+
+.weekdays span {
+  text-align: center;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+}
+
+.day {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.day:hover:not(.blank) {
+  background: #e6f0ff;
+}
+
+.day.selected {
+  background: #2563eb;
+  color: #fff;
+}
+
+.day.blank {
+  visibility: hidden;
+}
+
+.time-slots {
+  flex: 1.5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.time-header {
+  grid-column: span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.time-header .nav-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.time-header button {
+  background: #fff;
+  border: 1px solid #ccc;
+  color: #444;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.time-btn {
+  padding: 10px;
+  border: 2px solid #2563eb;
+  border-radius: 6px;
+  background: #fff;
+  color: #2563eb;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.time-btn:hover,
+.time-btn.active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.resume-upload {
+  border: 2px dashed #aaa;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  background: #fafafa;
+  cursor: pointer;
+}
+
+.resume-upload label {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+#applyBtn {
+  display: block;
+  width: 100%;
+  background: #808080;
+  color: #fff;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+#applyBtn:hover {
+  background: #666;
+}
