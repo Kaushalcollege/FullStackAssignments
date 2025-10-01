@@ -1,0 +1,73 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  background-color: rgb(59, 62, 62);
+}
+
+.container {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  text-align: left;
+  color: rgb(59, 62, 62);
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+input[type="text"] {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#calculate,
+#clear {
+  padding: 10px 15px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(68, 150, 24);
+  color: white;
+  cursor: pointer;
+}
+
+#operation {
+  width: 200px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#result {
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.error {
+  color: red;
+  margin-top: 10px;
+}
+
+#result-container {
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#history-container {
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+  min-height: 30px;
+  font-family: monospace;
+}
