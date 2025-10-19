@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment - 4 -- Time.</title>
+  </head>
+  <body>
+    <!-- wireframe:
+    container:
+        |
+        |-- heading(h1) with id "main-heading"
+        |
+        |-- div with local time (id = local-time) and date (id = local-date).
+        |
+        |-- div with other zone times(id = zone-time) and dates(id = zone-date) -- select dropdown element(id = timezone-select) -->
+
+    <div class="container">
+      <h1 id="main-heading">Time in Different Time Zones</h1>
+      <div class="local-time-date">
+        <p id="local-time">Your Local Time</p>
+        <p id="local-date"></p>
+      </div>
+      <div class="zone-time-date">
+        <label for="timezone-select">Selected Time Zone</label>
+        <select id="timezone-select">
+          <option value="America/New York">New York</option>
+          <option value="Europe/London">London</option>
+          <option value="Asia/Tokyo">Tokyo</option>
+          <option value="Australia/Sydney">Sydney</option>
+          <option value="Europe/Berlin">Berlin</option>
+        </select>
+        <p id="zone-time"></p>
+        <p id="zone-date"></p>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

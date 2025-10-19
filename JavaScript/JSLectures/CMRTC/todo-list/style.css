@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: antiquewhite;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+}
+
+.box1 {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	padding: 5px;
+	background-color: yellowgreen;
+}
+.task {
+	border-radius: 5px;
+	display: flex;
+	/* align-items: center; */
+	padding: 10px;
+	background-color: aquamarine;
+	margin-bottom: 5px;
+	justify-content: space-between;
+}
