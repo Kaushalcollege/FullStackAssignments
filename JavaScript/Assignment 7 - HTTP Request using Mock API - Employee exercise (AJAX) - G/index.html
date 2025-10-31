@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Assignment 7 - HTTP Request using Mock API - Employee exercise (AJAX) - G
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Following the Wireframe put up in the script.js ::  -->
+    <header class="top">
+      <h1 class="heading">Mock API</h1>
+      <button class="addButton">👤+</button>
+    </header>
+
+    <h2>Customer Feedback System</h2>
+
+    <section id="feedbackList">
+        <table border="1" id="feedbackTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Rating</th>
+        <th>Comment</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+    </section>
+
+    <div class="overlay hidden addUserForm" id="addUserForm">
+      <div class="popup">
+        <h3>Add User</h3>
+        <label>Name<input id="name" type="text" /></label>
+        <label>Rating<input id="rating" type="number" /></label>
+        <label>Comment<textarea id="comment" rows="3" /></textarea></label>
+
+        <div class="popup-actions">
+        <button class="saveButton">Save</button>
+        <button class="closeButton">Close</button>
+      </div>
+      </div>
+    </div>
+
+    <div class="overlay hidden confirm-box" id="confirm-box">
+    <div class="confirm-popup">
+      <p id="confirmText">Are you sure ?</p>
+      <div class="confirm-actions">
+        <button id="delete">Delete</button>
+        <button id="cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
