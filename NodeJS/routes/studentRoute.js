@@ -2,8 +2,9 @@ let express = require("express");
 let router = express.Router();
 let studentController = require("./../controllers/studentController");
 
-router.get("/all", studentController.getAllStudents);
-router.get("/new", studentController.addNewStudent);
+router.post("/all", studentController.getStudents);
+router.post("/new", studentController.addNewStudent);
+router.post("/login", studentController.login);
 router.get("/t10", studentController.getTOP10Students);
 router.get("/l5", studentController.getLAST5);
 router.get("/", (request, response) => {

@@ -2,6 +2,8 @@ let express = require("express");
 
 // let sC = require("./controllers/studentController");
 const app = express();
+app.use(express.json());
+
 let studentRouter = require("./routes/studentRoute");
 
 app.get("/", (request, response) => {
@@ -31,13 +33,7 @@ let studentLoad = () => {
   });
 };
 
-app.use(
-  "/student",
-  () => {
-    studentLoad();
-  },
-  studentRouter,
-);
+app.use("/student", studentRouter);
 app.use(
   "/faculty",
   (req, res, next) => {

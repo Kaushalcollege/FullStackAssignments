@@ -1,0 +1,17 @@
+{
+  "name": "kaushalkumar",
+  "version": "1.0.0",
+  "description": "Assignment-1 NodeJS Kaushal Kumar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaushal Kumar",
+  "license": "ISC",
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

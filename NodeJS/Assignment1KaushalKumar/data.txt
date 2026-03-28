@@ -1,0 +1,10 @@
+Anand | 22 | 0 | Mumbai
+Bihu | 17 | 1 | Pune
+Ravi | 25 | 0 | Delhi
+Sneha | 21 | 1 | Bangalore
+Arjun | 30 | 0 | Hyderabad
+Priya | 19 | 1 | Chennai
+Karan | 27 | 0 | Kolkata
+Meera | 24 | 1 | Jaipur
+Rahul | 28 | 0 | Ahmedabad
+Neha | 23 | 1 | Lucknow
