@@ -1,3 +1,5 @@
+let dotenv = require("dotenv");
+dotenv.config();
 let app = require("./app.js");
 
 app.listen(3000, "localhost", (err) => {

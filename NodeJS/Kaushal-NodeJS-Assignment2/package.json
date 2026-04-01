@@ -1,0 +1,21 @@
+{
+  "name": "kaushal-nodejs-assignment2",
+  "version": "1.0.0",
+  "description": "Gradious NodeJS Assignment - 2",
+  "license": "ISC",
+  "author": "Kaushal Kumar",
+  "type": "commonjs",
+  "main": "server.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "sudo nodemon server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "nodemon": "^3.1.14",
+    "path": "^0.12.7"
+  }
+}

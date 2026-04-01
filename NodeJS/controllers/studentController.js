@@ -1,5 +1,8 @@
 let pool = require("./../db");
 let bcrypt = require("bcrypt");
+let jwt = require("jsonwebtoken");
+let dotenv = require("dotenv");
+dotenv.config();
 
 let addNewStudent = async (req, res) => {
   console.log(req.body);
@@ -69,7 +72,22 @@ let login = async (request, response) => {
     });
   }
 
-  return response.json({ data: match });
+  let token = generateToken({ id: user.id });
+
+  return response.status(200).json({
+    status: "success",
+    jwttoken: token,
+    user: user,
+  });
+
+  // return response.json({ data: match });
+};
+
+let generateToken = (payload) => {
+  let token = jwt.sign(payload, process.env.JWT_SECRET, {
+    expiresIn: "5m",
+  });
+  return token;
 };
 
 module.exports = {
